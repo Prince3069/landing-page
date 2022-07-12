@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="styles.css" rel="stylesheet">
+<title>Document</title>
+</head>
+<body>
+<nav>
+<div class="logo">Brand</div>
+<!--- toggle menu button --->
+<span class="menubtn" onclick="openNav()"></span>
+<div class="navLinks">&#9776;</div>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Contact</a></li>
+<button type="button">Login</button>
+</ul>
+</nav>
+<!--responsive side navbar-->
+<div class="sideNav" id="sideNav">
+<a href="#" class="clodeBtn" onclick="closeNav()">&#100006;</a>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Contact</a></li>
+<a href="#"><button type="button">Login</button></a>
+</div>
+
+<!--Header content with banner image-->
+<div class="row">
+<div class="column1">
+<h1>Responsive Design</h1>
+<p>Contact us for responsive web design to grow your business!</p>
+<button>PURCHASE</button>
+</div>
+<div class="column2">
+<img src="marketing-business-banner-template.webp" width="500px" alt="banner">
+</div>
+</div>
+
+<!--Javascript to make side menu appear-->
+<script>
+    function openNav(){
+    document.getElementById("sideNav").style.width="50%"; 
+    }
+    function CloseNav(){
+    document.getElementById("sideNav").style.width="0%"; 
+    }
+    </script>
+    </body>
+    </html>
+    
